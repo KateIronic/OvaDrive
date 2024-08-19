@@ -24,7 +24,7 @@ const MainItems: React.FC<MainItemsProps> = ({
   return (
     <div
       data-aos="fade-up"
-      className={`flex flex-col md:flex-row h-[60vh] min-w-full ${
+      className={`flex flex-col md:flex-row h-[60vh] min-w-full mt-36 ${
         isLeftAligned ? "md:flex-row-reverse" : ""
       } items-center justify-between mx-auto space-y-6 md:space-y-0`}>
       {/* Image section */}
@@ -32,7 +32,7 @@ const MainItems: React.FC<MainItemsProps> = ({
         <Image
           src={img}
           alt={title.map((segment) => segment.text).join(" ")}
-          className="w-[80%] md:w-[90%] object-cover"
+          className="w-[70%] md:w-[90%] object-cover"
         />
       </div>
 
@@ -41,7 +41,7 @@ const MainItems: React.FC<MainItemsProps> = ({
         className={`text-white md:w-1/2 mx-36 ${
           isLeftAligned ? "md:ml-8" : "md:mr-8"
         }`}>
-        <h1 className="text-5xl leading-[72px] font-semibold">
+        <h1 className="text-4xl leading-[70px] w-full font-semibold mt-10">
           {title.map((segment, index) => (
             <span
               key={index}

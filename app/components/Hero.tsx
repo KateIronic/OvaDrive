@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="w-[100%] mt-48 mx-auto h-[75vh] relative">
+      className="w-[100%] mt-28 mx-auto h-[75vh] relative">
       <div className="rounded-none z-20 absolute top-0 left-0 h-full min-w-full">
         <div>
           <div className="text-center text-white mt-24">

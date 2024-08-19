@@ -3,7 +3,7 @@ import NavbarItems from "@/app/components/NavItems";
 import CustomButton from "./CustomButton";
 import image from "@/public/logoPV.png";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [activeItem, setActiveItem] = useState<string>("");
@@ -22,8 +22,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex items-center justify-between border-white border-[1px]  rounded-l-full rounded-r-full p-4 w-[70%] mx-auto bg-[#4D4D4D] fixed left-[15%] z-50 mt-12">
-      <div className="h-[46px] w-[46px] rounded-full overflow-hidden flex items-center justify-center">
+    <nav className="flex items-center justify-between border-white border-[1px]  rounded-l-full rounded-r-full p-4 w-[70%] h-[8%] mx-auto bg-[#4D4D4D] fixed left-[15%] z-50 mt-6">
+      <div className="h-[40px] w-[40px] rounded-full overflow-hidden flex items-center justify-center">
         <Image
           src={image}
           alt="logo"
@@ -47,7 +47,7 @@ const Navbar = () => {
         text={"Get The App"}
         onClick={dummyFunction}
         className={
-          "font-poppins text-sm text-white h-[41px] min-w-[127px] rounded-3xl bg-[#A600FC]"
+          "font-poppins text-xs text-white h-[41px] min-w-[115px] rounded-3xl bg-[#A600FC]"
         }
       />
     </nav>
