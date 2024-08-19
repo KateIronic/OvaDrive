@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "./documentation/Navbar";
-import Sidebar from "./documentation/Sidebar";
-import Main from "./documentation/Main";
+import Navbar from "@/app/components/documentation/Navbar";
+import Sidebar from "@/app/components/documentation/Sidebar";
+import Main from "@/app/components/documentation/Main";
 
 const App = () => {
   return (

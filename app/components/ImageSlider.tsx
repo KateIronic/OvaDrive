@@ -23,16 +23,15 @@ const dotStyle: React.CSSProperties = {
 const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const next = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex + 1 < images.length ? prevIndex + 1 : 0
-    );
-  };
-
   useEffect(() => {
+    const next = () => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex + 1 < images.length ? prevIndex + 1 : 0
+      );
+    };
     const timer = setInterval(next, 5000);
     return () => clearInterval(timer);
-  }, [currentIndex]);
+  }, [currentIndex, images.length]);
 
   const goToSlide = (slideIndex: number) => {
     setCurrentIndex(slideIndex);

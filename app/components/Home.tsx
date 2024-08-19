@@ -4,7 +4,6 @@ import CardScrollable from "./CardScrollable";
 import TeamCard from "./TeamCard";
 import OvaDrive from "./OvaDrive";
 import { LampDemo } from "./LampEffect";
-import Template from "./template";
 
 const App = () => {
   return (
@@ -12,9 +11,8 @@ const App = () => {
       <div
         className="relative top-14 overflow-x-hidden"
         style={{ perspective: "1000px" }}>
-          <Hero />
-          <OvaDrive />
-
+        <Hero />
+        <OvaDrive />
 
         <div className="h-[100vh]">
           <CardScrollable title="OvaDrive" />

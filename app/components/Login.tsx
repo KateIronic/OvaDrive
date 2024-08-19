@@ -1,20 +1,21 @@
 import CustomButton from "./CustomButton";
 import Input from "./Input";
-import { useNavigate } from "react-router-dom";
 import logo from "../assets/logoPV.png";
 import image from "../assets/imagePV.png";
+import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const Login = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
 
   const handleLogin = (): void => {
-    navigate("/");
+    router.push("/");
   };
 
   return (
     <div className="flex h-screen">
       <div className="flex flex-col justify-center items-center w-1/2 px-16 space-y-8">
-        <img
+        <Image
           src={logo}
           alt="logo"
           className="h-[46px] w-[46px] rounded-full mb-8 absolute left-24 top-16"
@@ -48,14 +49,14 @@ const Login = () => {
         />
         <div className="flex justify-start mt-4">
           <p className="text-sm font-normal text-[#A4A4A4] cursor-pointer">
-            Don't have an account?{" "}
+            Don&apos;t have an account?{" "}
             <span className="text-[#A600FC] underline">Sign Up</span>
           </p>
         </div>
       </div>
 
       <div className="w-1/2">
-        <img
+        <Image
           src={image}
           alt="Decorative Background"
           className="h-full w-full object-cover"

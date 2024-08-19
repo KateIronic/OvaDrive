@@ -37,7 +37,7 @@ const About = () => {
 
   return (
     <div>
-      <div
+      <div  
         className="space-y-10 font-poppins w-full"
         data-aos="fade-up">
         {mainItemsData.map((item, index) => (
